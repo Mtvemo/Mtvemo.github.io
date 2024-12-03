@@ -297,6 +297,10 @@
             chatContainer.style.display = chatContainer.style.display === 'flex' ? 'none' : 'flex';
         }
 
+        function closePopup() {
+            document.getElementById('privacy-popup').style.display = 'none';
+        }
+
         function sendMessage() {
             const userMessage = chatInput.value.trim();
             if (userMessage) {
